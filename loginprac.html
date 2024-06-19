@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>portal login</title>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: arial,san-serif;
+            }
+	 .title{
+                text-align: center;
+                margin-bottom: 8px;
+                font-family:Anton;
+                font-weight: 500;
+            }
+            body {
+                background-color:rgb(50,60,50);
+
+            }
+
+            form {
+                background-color:rgba(225,225,225,1.5); 
+                margin-top: 100px;
+                margin-left: 450px;
+                margin-right: 450px;
+                padding: 30px;
+                border-radius: 10px;
+	        box-shadow: 0 0 15px rgba(0,0,0,1.5);
+            }
+
+            #pass{
+                margin-top: 10px;
+            }
+
+            .btn{
+                width:100%;
+	  min-height: 5vh;
+                background-color:#007bff;
+                padding: 2px;
+                border-radius: 2px;
+                margin-top: 20px ;
+                border:none;
+            }
+
+            .btn:hover{
+                background-color:#0056b3;
+                cursor: pointer;
+            }
+
+            .field{
+                width: 100%;
+                margin-top: 4px;
+                padding: 2px;
+            }
+
+           
+
+        </style>
+    </head>
+    <body>
+        <form action="#" class="box">
+            <h2 class="title">portal login</h2>
+            <div class="inp" id="user">
+                <label for ="name" >Name</label>
+                <input type="text" id="name" class="field"/>
+            </div>
+
+            <div class="inp" id="pass">
+                <label for ="uid">UID</label>
+                <input type="number" min="1000000000" max="9999999999" id="uid"  class="field" />
+            </div>
+
+            <input type="submit" value="Login" class="btn"/>
+        </form>
+    </body>
+</html>
